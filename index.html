@@ -132,14 +132,13 @@
   .navmobile.open span::after{top:0; transform:rotate(-45deg);}
 
   .mobile-panel{
-    display:none;
     max-height:0;
     overflow:hidden;
     background:var(--snow-2);
-    border-bottom:1px solid var(--line);
-    transition:max-height .25s ease;
+    border-bottom:0 solid var(--line);
+    transition:max-height .25s ease, border-bottom-width .25s ease;
   }
-  .mobile-panel.open{max-height:420px;}
+  .mobile-panel.open{max-height:420px; border-bottom-width:1px;}
   .mobile-panel ul{list-style:none; padding:8px 28px 20px;}
   .mobile-panel li{border-top:1px solid var(--line);}
   .mobile-panel a{
